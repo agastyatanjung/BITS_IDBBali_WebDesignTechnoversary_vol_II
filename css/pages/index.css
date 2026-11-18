@@ -608,19 +608,16 @@ mark {
 
 @media (max-width: 900px) {
   .hero {
-    background: #eeeded;
+    min-height: 0;
+    background: transparent;
   }
-  .hero__bg,
-  .hero__bg img {
-    height: 100%;
-  }
-  .hero__bg img {
-    object-fit: cover;
-    object-position: center bottom;
+  .hero__bg {
+    display: none;
   }
   .hero__content {
-    padding-top: clamp(96px, 16vh, 140px);
-    padding-bottom: clamp(200px, 38vh, 420px);
+    margin-top: 72px;
+    padding-top: clamp(48px, 10vh, 96px);
+    padding-bottom: clamp(48px, 8vh, 80px);
   }
 }
 @media (max-height: 560px) {
