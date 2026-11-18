@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pembayaran — Suaka</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/Asset/icons/tabicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/css/components/navbar.css" />
+    <link rel="stylesheet" href="/css/components/footer.css" />
+    <link rel="stylesheet" href="/css/pages/Payments.css" />
+  </head>
+  <body>
+    <div id="navbar-container"></div>
+
+    <main class="pay">
+      <section class="stage" aria-hidden="true">
+        <span class="orb orb--a"></span>
+        <span class="orb orb--b"></span>
+        <div class="stack">
+          <article class="glass glass--back">
+            <b>SUAKA</b>
+            <span data-card-line></span>
+          </article>
+          <article class="glass glass--mid">
+            <b>SUAKA</b>
+            <span data-card-line></span>
+          </article>
+          <article class="glass glass--front">
+            <b>SUAKA</b>
+            <strong id="cardName">Paket donasi</strong>
+            <em id="cardPrice">Rp0</em>
+          </article>
+        </div>
+      </section>
+
+      <section class="sheet">
+        <form id="payForm" novalidate>
+          <header class="sheet__top">
+            <h1>Payment details</h1>
+            <button class="qr-link" id="openQris" type="button">QR code</button>
+          </header>
+          <p class="product" id="productLine"></p>
+
+          <div class="methods" role="tablist" aria-label="Metode pembayaran">
+            <button type="button" data-method="qris" role="tab">QRIS</button>
+            <button type="button" data-method="kartu" class="is-on" role="tab">
+              Kartu
+            </button>
+            <button type="button" data-method="emoney" role="tab">
+              E-Money
+            </button>
+          </div>
+
+          <p class="or" id="orLine"><span>Or</span></p>
+
+          <div class="pane" data-pane="qris" hidden>
+            <div class="qr" id="qr" aria-hidden="true"></div>
+            <p class="hint">
+              Pindai QRIS ini, lalu daftarkan email agar kode pembayaran masuk
+              ke kotak masukmu.
+            </p>
+          </div>
+
+          <div class="pane" data-pane="kartu">
+            <label>
+              Card Number
+              <input
+                id="cardNumber"
+                inputmode="numeric"
+                autocomplete="cc-number"
+                placeholder="5678    ****    ****    1267"
+                maxlength="19"
+              />
+            </label>
+            <label>
+              Card Holder Name
+              <input
+                id="cardNameInput"
+                autocomplete="cc-name"
+                placeholder="Nama di kartu"
+              />
+            </label>
+            <div class="split">
+              <label>
+                Expiry Date
+                <input
+                  id="cardExpiry"
+                  inputmode="numeric"
+                  autocomplete="cc-exp"
+                  placeholder="mm / yy"
+                  maxlength="7"
+                />
+              </label>
+              <label>
+                CVV/CVC
+                <input
+                  id="cardCvv"
+                  inputmode="numeric"
+                  autocomplete="cc-csc"
+                  placeholder="xxx"
+                  maxlength="4"
+                />
+              </label>
+              <span class="brand" aria-hidden="true"></span>
+            </div>
+          </div>
+
+          <div class="pane" data-pane="emoney" hidden>
+            <label>
+              Dompet
+              <select id="wallet">
+                <option value="GoPay">GoPay</option>
+                <option value="OVO">OVO</option>
+                <option value="DANA">DANA</option>
+                <option value="ShopeePay">ShopeePay</option>
+              </select>
+            </label>
+            <label>
+              Nomor telepon
+              <input
+                id="phone"
+                inputmode="tel"
+                autocomplete="tel"
+                placeholder="08xxxxxxxxxx"
+              />
+            </label>
+          </div>
+
+          <label>
+            Nama
+            <input
+              id="donorName"
+              autocomplete="name"
+              placeholder="Nama kamu"
+              required
+            />
+          </label>
+          <label>
+            Email untuk kuitansi
+            <input
+              id="email"
+              type="email"
+              autocomplete="email"
+              placeholder="nama@email.com"
+              required
+            />
+          </label>
+
+          <div class="total">
+            <span>Total Amount:</span>
+            <strong id="total">Rp0</strong>
+          </div>
+          <p class="error" id="formError" hidden></p>
+          <button class="pay-btn" id="payBtn" type="submit">Pay</button>
+          <a class="back" href="/Donasi_1.html">Kembali ke paket</a>
+        </form>
+
+        <article class="receipt" id="done" hidden>
+          <header class="receipt__logo">
+            <img src="/Asset/Svg/suakaLOGO.svg" alt="Suaka" />
+          </header>
+          <section class="receipt__block">
+            <h2 id="thanksLine">Terima kasih</h2>
+            <p>Donasimu sudah kami terima.</p>
+            <p class="receipt__id">ID DONASI: <strong id="payCode"></strong></p>
+          </section>
+          <section class="receipt__block">
+            <h3>RINCIAN DONASI</h3>
+            <dl class="receipt__rows">
+              <div>
+                <dt>Jenis donasi</dt>
+                <dd id="rJenis"></dd>
+              </div>
+              <div>
+                <dt>Paket</dt>
+                <dd id="rPaket"></dd>
+              </div>
+              <div>
+                <dt>Tanggal</dt>
+                <dd id="rTanggal"></dd>
+              </div>
+              <div>
+                <dt>Metode</dt>
+                <dd id="rMetode"></dd>
+              </div>
+            </dl>
+            <div class="receipt__total">
+              <span>TOTAL DIBAYAR</span>
+              <strong id="rTotal"></strong>
+            </div>
+          </section>
+          <section class="receipt__block">
+            <h3>APA YANG TERJADI SELANJUTNYA</h3>
+            <ol class="receipt__steps">
+              <li class="is-done">
+                <span>1 Diterima</span>
+                <time id="rDateShort"></time>
+              </li>
+              <li>
+                <span>2 Dialokasikan</span>
+                <time>± [N] hari</time>
+              </li>
+              <li>
+                <span>3 Disalurkan</span>
+                <time>± [N] hari</time>
+              </li>
+              <li>
+                <span>4 Laporan dampak</span>
+                <time>± [N] hari</time>
+              </li>
+            </ol>
+            <a class="receipt__track" id="trackBtn" href="/index.html"
+              >Lacak Donasiku</a
+            >
+          </section>
+          <section class="receipt__block">
+            <p class="receipt__label">Ke mana uangmu pergi</p>
+            <div class="receipt__bar" aria-hidden="true">
+              <i></i><i></i><i></i>
+            </div>
+            <p class="receipt__key">
+              <span>80%</span><span>15%</span><span>5%</span>
+            </p>
+            <p>Cara kami memberi kabar lewat email, bersama ID donasimu.</p>
+          </section>
+          <footer class="receipt__help">
+            <span>Butuh bantuan?</span>
+            <button id="copyCode" type="button">Simpan ID ini</button>
+          </footer>
+          <p class="receipt__sent" id="doneMail"></p>
+        </article>
+      </section>
+    </main>
+
+    <div id="site-footer"></div>
+    <script src="/js/core/components.js" defer></script>
+    <script src="/js/modules/navbar.js" defer></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+      defer
+    ></script>
+    <script src="/js/pages/Payments.js" defer></script>
+  </body>
+</html>

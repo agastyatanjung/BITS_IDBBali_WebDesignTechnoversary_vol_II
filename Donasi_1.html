@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sekali Donasi — Suaka</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/components/navbar.css" />
+    <link rel="stylesheet" href="/css/components/footer.css" />
+    <link rel="icon" href="/Asset/icons/tabicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/css/pages/Donasi_1.css" />
+    <link rel="stylesheet" href="/css/components/button.css" />
+    <link rel="stylesheet" href="/css/components/reveal.css" />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+  </head>
+  <body>
+    <div id="navbar-container"></div>
+
+    <main class="page">
+      <div class="wrap">
+        <header class="head reveal">
+          <h1>Sekali Donasi</h1>
+          <p>
+            Pilih Dukunganmu, Bayar Dalam Satu Menit Tanpa Akun, Lalu Lacak
+            Sampai Ke Hutan.
+          </p>
+        </header>
+
+        <div class="pkgs">
+          <article class="pkg pkg--orange reveal" data-paket="satu-pohon">
+            <span class="pkg__tag"><i></i>Satu Pohon</span>
+            <p class="pkg__lead">
+              1 Pohon Ditanam Dan Dirawat Di Area Pemulihan
+            </p>
+            <ul class="pkg__list">
+              <li>Bibit jenis lokal, dipilih oleh tim konservasi</li>
+              <li>Dirawat selama [N] bulan sampai tumbuh kuat</li>
+              <li>Foto dan titik lokasi penanaman bertanggal</li>
+            </ul>
+            <div class="pkg__foot">
+              <a
+                class="pkg__cta"
+                href="/Payments.html?tipe=sekali&amp;paket=satu-pohon&amp;nominal=25000&amp;nama=Satu%20Pohon"
+                >Pilih Paket Ini</a
+              >
+              <p class="pkg__price"><small>Rp</small>25.000</p>
+            </div>
+          </article>
+
+          <article class="pkg pkg--grey reveal" data-paket="penjaga-hutan">
+            <span class="pkg__tag"><i></i>Penjaga Hutan</span>
+            <p class="pkg__lead">1 Hari Patroli Ranger Di Area Hutan</p>
+            <ul class="pkg__list">
+              <li>Membiayai satu hari patroli tim ranger</li>
+              <li>Mencakup logistik dan perlengkapan patroli</li>
+              <li>Ringkasan temuan patroli: jejak satwa dan ancaman</li>
+            </ul>
+            <div class="pkg__foot">
+              <a
+                class="pkg__cta"
+                href="/Payments.html?tipe=sekali&amp;paket=penjaga-hutan&amp;nominal=50000&amp;nama=Penjaga%20Hutan"
+                >Pilih Paket Ini</a
+              >
+              <p class="pkg__price"><small>Rp</small>50.000</p>
+            </div>
+          </article>
+
+          <article class="pkg pkg--purple reveal" data-paket="teman-satwa">
+            <span class="pkg__tag"><i></i>Teman Satwa</span>
+            <p class="pkg__lead">
+              2 Hari Pakan Dan Perawatan Untuk Satwa Yang Terpilih
+            </p>
+            <ul class="pkg__list">
+              <li>Pakan bergizi untuk satwa selama 2 hari</li>
+              <li>Perawatan harian oleh tim di pusat rehabilitasi</li>
+              <li>Kabar kondisi satwa yang kamu bantu</li>
+            </ul>
+            <div class="pkg__foot">
+              <a
+                class="pkg__cta"
+                href="/Payments.html?tipe=sekali&amp;paket=teman-satwa&amp;nominal=100000&amp;nama=Teman%20Satwa"
+                >Pilih Paket Ini</a
+              >
+              <p class="pkg__price"><small>Rp</small>100.000</p>
+            </div>
+          </article>
+
+          <article class="pkg pkg--green reveal" data-paket="sahabat-rimba">
+            <span class="pkg__tag"><i></i>Sahabat Rimba</span>
+            <p class="pkg__lead">
+              5 Pohon Ditanam, Atau 1 Pemeriksaan Kesehatan Satwa.
+            </p>
+
+            <div
+              class="seg"
+              role="radiogroup"
+              aria-label="Pilih penggunaan donasimu"
+            >
+              <label
+                ><input type="radio" name="rimba" value="pohon" checked /><span
+                  >5 Pohon</span
+                ></label
+              >
+              <label
+                ><input type="radio" name="rimba" value="kesehatan" /><span
+                  >1 Pemeriksaan Satwa</span
+                ></label
+              >
+            </div>
+
+            <ul class="pkg__list for-pohon">
+              <li>5 bibit jenis lokal ditanam di area pemulihan</li>
+              <li>Dirawat selama [N] bulan</li>
+              <li>Foto dan titik lokasi penanaman bertanggal</li>
+            </ul>
+            <ul class="pkg__list for-kesehatan">
+              <li>Pemeriksaan kesehatan oleh dokter hewan</li>
+              <li>Mencakup obat dan perawatan awal bila diperlukan</li>
+              <li>Catatan hasil pemeriksaan untuk satwa yang dibantu</li>
+            </ul>
+
+            <div class="pkg__foot">
+              <a
+                class="pkg__cta"
+                href="/Payments.html?tipe=sekali&amp;paket=sahabat-rimba&amp;nominal=125000&amp;nama=Sahabat%20Rimba"
+                >Pilih Paket Ini</a
+              >
+              <p class="pkg__price"><small>Rp</small>125.000</p>
+            </div>
+          </article>
+        </div>
+
+        <section class="included reveal">
+          <h2>Setiap paket sudah termasuk</h2>
+          <ul>
+            <li>ID donasi unik</li>
+            <li>Pelacak 4 tahap</li>
+            <li>Foto bertanggal &amp; berlokasi</li>
+            <li>Laporan dampak</li>
+          </ul>
+        </section>
+
+        <ul class="trust reveal">
+          <li>Tanpa Daftar Akun</li>
+          <li>Setiap Donasi Punya ID</li>
+          <li>Rincian Alokasi Terbuka</li>
+        </ul>
+      </div>
+    </main>
+
+    <div id="site-footer"></div>
+
+    <script src="/js/core/reveal.js" defer></script>
+    <script src="/js/core/components.js" defer></script>
+    <script src="/js/modules/navbar.js" defer></script>
+    <script src="/js/pages/Donasi-1.js" defer></script>
+  </body>
+</html>

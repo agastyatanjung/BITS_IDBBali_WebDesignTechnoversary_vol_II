@@ -1,0 +1,57 @@
+.btn,
+.btn--green,
+.btn--white,
+.btn--ghost,
+.btn--line {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 28px;
+  border: 0;
+  border-radius: 999px;
+  background: #1f7a46;
+  color: #fff;
+  box-shadow: none;
+  font: 600 0.95rem/1 "Plus Jakarta Sans", system-ui, sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    background-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.btn:hover,
+.btn--green:hover,
+.btn--white:hover,
+.btn--ghost:hover,
+.btn--line:hover,
+.btn--line.is-on {
+  background: #166338;
+  color: #fff;
+  box-shadow: none;
+  transform: translateY(-2px);
+}
+
+.btn:active,
+.btn--green:active,
+.btn--white:active,
+.btn--ghost:active,
+.btn--line:active {
+  transform: translateY(0) scale(0.98);
+}
+
+.cta:has(.cta__img) .btn,
+.cta:has(.cta__img) .btn--white,
+.cta:has(.cta__img) .btn--green {
+  background: #fff;
+  color: #141414;
+}
+
+.cta:has(.cta__img) .btn:hover,
+.cta:has(.cta__img) .btn--white:hover,
+.cta:has(.cta__img) .btn--green:hover {
+  background: #f3f3f3;
+  color: #141414;
+  transform: translateY(-2px);
+}

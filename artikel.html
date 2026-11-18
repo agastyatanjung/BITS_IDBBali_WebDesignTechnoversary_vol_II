@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Artikel — Suaka</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/components/navbar.css" />
+    <link rel="stylesheet" href="css/components/footer.css" />
+    <link rel="icon" href="/Asset/icons/tabicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/pages/Artikel.css" />
+    <link rel="stylesheet" href="/css/components/button.css" />
+    <link rel="stylesheet" href="/css/components/reveal.css" />
+    <script>document.documentElement.classList.add("js");</script>
+  </head>
+  <body>
+    <div id="navbar-container"></div>
+
+    <main class="artikel">
+      <div class="artikel__wrap">
+        <header class="artikel__intro">
+          <h1>
+            Kami Menyediakan Artikel Terbaru Mengenai Fauna &amp; Satwa Yang
+            Langka
+          </h1>
+          <p>
+            Temukan Berita Terkini Lewat Kumpulan Artikel Terbaru Kami Di Sini
+          </p>
+        </header>
+
+        <div class="artikel__tools">
+          <label class="artikel__select">
+            <span class="sr-only">Kategori</span>
+            <select id="artikelCategory" aria-label="Kategori"></select>
+          </label>
+          <form class="artikel__search" id="artikelSearch" role="search">
+            <label class="sr-only" for="artikelQuery">Cari berita</label>
+            <input
+              id="artikelQuery"
+              type="search"
+              placeholder="Cari Berita..."
+              autocomplete="off"
+            />
+          </form>
+        </div>
+
+        <p id="artikelStatus" class="artikel__status" hidden></p>
+        <div id="artikelGrid" class="artikel__grid" aria-live="polite"></div>
+        <nav
+          id="artikelPages"
+          class="artikel__pages"
+          aria-label="Halaman artikel"
+        ></nav>
+      </div>
+    </main>
+
+    <div id="site-footer"></div>
+
+    <script src="/js/core/reveal.js" defer></script>
+    <script src="js/modules/navbar.js" defer></script>
+    <script src="js/core/components.js" defer></script>
+    <script src="js/pages/artikel.js" defer></script>
+  </body>
+</html>

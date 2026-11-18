@@ -1,0 +1,599 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Suaka — Platform Donasi untuk Satwa & Fauna Langka</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/Asset/icons/tabicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/components/navbar.css" />
+    <link rel="stylesheet" href="css/components/footer.css" />
+    <link rel="stylesheet" href="/css/pages/index.css" />
+    <link rel="stylesheet" href="/css/components/button.css" />
+    <link rel="stylesheet" href="/css/components/reveal.css" />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+  </head>
+  <body>
+    <svg width="0" height="0" style="position: absolute" aria-hidden="true">
+      <symbol id="i-arrow" viewBox="0 0 24 24">
+        <path
+          d="M7 17 17 7M8 7h9v9"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </symbol>
+    </svg>
+
+    <div id="navbar-container"></div>
+    <main>
+      <section class="hero">
+        <picture class="hero__bg">
+          <source
+            media="(max-width: 900px)"
+            srcset="Asset/Image/HOMEPAGE/HeroBackground-Mobile.png"
+          />
+          <img
+            src="Asset/Image/HOMEPAGE/hero background.png"
+            alt="Badak dan komodo di tepi hutan"
+          />
+        </picture>
+        <div class="hero__content">
+          <h1>Platform Donasi kepada Satwa &amp; Fauna yang langka</h1>
+          <p>Platform donasi kepada satwa &amp; fauna yang terancam punah</p>
+          <a class="btn btn--green" href="Donation.html">Donasi Sekarang</a>
+        </div>
+      </section>
+      <div class="ticker">1000+ satwa &amp; fauna langka sudah tertolong</div>
+
+      <section class="story" id="story">
+        <div class="story__text">
+          <article class="story__block">
+            <small>Hai kenalin aku</small>
+            <h2 class="script script--xl">Indri</h2>
+            <p>
+              Hari-hariku tidak jauh berbeda dengan kalian kok. Aku bangun pagi
+              terus mencari makan, setelah itu aku pergi untuk mengurus
+              anak-anakku
+            </p>
+          </article>
+          <article class="story__block">
+            <h2 class="script">Hutan ini rumahku</h2>
+            <p class="small">
+              Aku hafal tiap jalurnya. Pohon mana yang berbuah, sungai mana yang
+              jernih, dahan mana yang aman untuk tidur.
+            </p>
+          </article>
+          <article class="story__block">
+            <h2 class="script">Belakangan, rumahku makin sempit</h2>
+            <p class="small">
+              Pohon-pohon yang kukenal hilang satu per satu. Jalan menuju
+              makanan jadi lebih jauh. Sekarang kami tinggal [N] ekor di alam
+              liar.
+            </p>
+          </article>
+          <article class="story__block">
+            <h2 class="script">Mungkin kamu bisa bantu</h2>
+            <p class="small">
+              Hutan masih bisa dijaga, dan aku masih bisa pulang. Kalau kamu
+              mau, mulailah dari sini.
+            </p>
+          </article>
+        </div>
+        <div class="story__media">
+          <div class="media fill" data-label="video">
+            <video
+              src="/Asset/Video/video1x1suaka.mp4"
+              autoplay
+              muted
+              loop
+              playsinline
+              preload="auto"
+            ></video>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="wrap">
+          <header class="center">
+            <h2 class="h2">kamu bisa bantu dengan<br />4 langkah mudah</h2>
+            <p class="muted">
+              Bantuanmu sampai ke hutan &amp; kamu bisa melihatnya
+            </p>
+          </header>
+          <div class="steps">
+            <article class="step">
+              <h3><span>01</span> Diterima</h3>
+              <div class="media" data-label="Foto: konfirmasi donasi di ponsel">
+                <img
+                  src="/Asset/Image/HOMEPAGE/Home-Langkah-Diterima.png"
+                  alt=""
+                />
+              </div>
+            </article>
+            <article class="step">
+              <h3><span>02</span> Dialokasikan</h3>
+              <div class="media" data-label="Foto: tim membaca peta">
+                <img
+                  src="/Asset/Image/HOMEPAGE/Home-Langkah-Dialokasikan.png"
+                  alt=""
+                />
+              </div>
+            </article>
+            <article class="step">
+              <h3><span>03</span> Disalurkan</h3>
+              <div class="media" data-label="Foto: ranger merawat orangutan">
+                <img
+                  src="/Asset/Image/HOMEPAGE/Home-Langkah-Disalurkan.png"
+                  alt=""
+                />
+              </div>
+            </article>
+            <article class="step">
+              <h3><span>04</span> Laporan Dampak</h3>
+              <div class="media" data-label="Foto: laporan di tablet">
+                <img
+                  src="/Asset/Image/HOMEPAGE/Home_langkah_Laporan.png"
+                  alt=""
+                />
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="wrap">
+          <header class="sec-head">
+            <h2 class="h2">Donasi Mudah<br />Tanpa Ribet</h2>
+            <p class="muted">
+              Kami sudah menyediakan
+              <mark>pilihan yang paling sesuai untukmu.</mark> Setiap
+              rekomendasi didasarkan pada riset dan data terpercaya untuk
+              memastikan kontribusimu memberikan dampak nyata.
+            </p>
+          </header>
+          <div class="grid-2">
+            <a class="card card--photo" href="donasi.html#esensial">
+              <div class="media fill" data-label="Foto: trenggiling">
+                <img
+                  src="/Asset/Image/HOMEPAGE/Home_Donasi_Dampak.jpg"
+                  alt=""
+                />
+              </div>
+              <span class="chip">Donasi Esesnsial</span>
+              <h3 class="card__title">Sedikit namun<br />Berdampak</h3>
+              <p class="card__cap">
+                Kontribusi sederhana untuk membuka perlindungan satwa dan
+                kelestarian habitatnya
+              </p>
+              <span class="circle"
+                ><svg width="22" height="22"><use href="#i-arrow" /></svg
+              ></span>
+            </a>
+            <a class="card card--photo" href="donasi.html#berdampak">
+              <div class="media fill" data-label="Foto: orangutan">
+                <img
+                  src="/Asset/Image/HOMEPAGE/Home-DonasiBerdampak.png"
+                  alt=""
+                />
+              </div>
+              <span class="chip">Donasi Berdampak</span>
+              <h3 class="card__title">
+                Semakin besar<br />semakin<br />berdampak
+              </h3>
+              <p class="card__cap">
+                Kontribusi lebih besar untuk memperkuat upaya konservasi dan
+                menciptakan masa depan yang lebih baik bagi satwa liar.
+              </p>
+              <span class="circle"
+                ><svg width="22" height="22"><use href="#i-arrow" /></svg
+              ></span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="wrap">
+          <header class="sec-head">
+            <h2 class="h2">Kepastian adalah<br />nomor 1 bagi kami</h2>
+            <p class="muted">
+              Kamu bisa membantu di banyak tempat. Di Suaka, kamu juga bisa
+              memastikan bantuanmu sampai, dan tepat sasaran.
+            </p>
+          </header>
+          <div class="grid-2">
+            <article class="card card--info">
+              <div class="media fill" data-label="Foto: ranger">
+                <img src="/Asset/Image/HOMEPAGE/Home_Transparansi.png" alt="" />
+              </div>
+              <h3 class="script script--gold">Transparansi</h3>
+              <p>
+                Setiap donasi punya ID unik. Pantau dari Diterima, Dialokasikan,
+                Disalurkan, sampai Laporan dampak, seperti melacak paket.
+              </p>
+              <ul class="lines">
+                <li>ID Unik</li>
+                <li>Status Live</li>
+                <li>Foto Bertanggal</li>
+              </ul>
+            </article>
+            <article class="card card--info">
+              <div class="media fill" data-label="Foto: tim lapangan">
+                <img src="/Asset/Image/HOMEPAGE/Home_Ketepatan.png" alt="" />
+              </div>
+              <h3 class="script script--gold">Ketepatan</h3>
+              <p>
+                Setiap donasi punya ID unik. Pantau dari Diterima, Dialokasikan,
+                Disalurkan, sampai Laporan dampak, seperti melacak paket.
+              </p>
+              <ul class="lines">
+                <li>Dana per tujuan</li>
+                <li>Tepat jumlah</li>
+                <li>Tepat waktu</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="wrap">
+          <div class="center">
+            <span class="pill"><i></i>Manfaat</span>
+          </div>
+          <div class="benefit">
+            <div class="benefit__main">
+              <div class="media benefit__img" data-label="Foto: badak">
+                <img src="/Asset/Image/HOMEPAGE/Home_Manfaat.jpg" alt="" />
+              </div>
+              <h3>Donasimu sangat<br />berarti bagi mereka</h3>
+            </div>
+            <div class="benefit__side">
+              <ul class="tags">
+                <li class="script">Patroli ranger</li>
+                <li class="script">Pohon baru</li>
+                <li class="script">Pakan satwa</li>
+                <li class="script">Rehabilitasi satwa</li>
+                <li class="script">Perawatan medis</li>
+              </ul>
+              <p>
+                <b>Patroli, pohon, pakan<br />&amp; lebih banyak lagi</b>
+              </p>
+              <small
+                >Semua yang dibutuhkan rumah mereka, dalam satu
+                langkahmu.</small
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="reach">
+        <div class="wrap">
+          <h2 class="h2">
+            Dari Sumatra sampai Papua kami<br />hadir di hutan mereka
+          </h2>
+
+          <div
+            class="media reach__map"
+            data-label="SVG peta Indonesia (titik-titik)"
+          >
+            <img src="/Asset/Svg/Hero_Indonesia_Map.svg" alt="" />
+          </div>
+          <div class="stats">
+            <div class="stat">
+              <b data-count="20">0</b><span>+</span
+              ><small>Suaka<br />Margasatwa</small>
+            </div>
+            <div class="stat">
+              <b data-count="45">0</b><span>+</span
+              ><small>Spesies<br />Dipantau</small>
+            </div>
+            <div class="stat">
+              <b data-count="200">0</b><span>+</span
+              ><small>Penjaga<br />Lokal</small>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ================= FAQ ================= -->
+      <section class="faq" id="faq" aria-labelledby="faqTitle">
+        <div class="faq__wrap">
+          <header class="faq__head">
+            <h2 id="faqTitle">
+              Ingin Tahu Lebih Jauh?<br />Temukan Jawabannya Di Sini
+            </h2>
+            <span class="faq__mark" aria-hidden="true">FAQ</span>
+          </header>
+
+          <div class="faq__grid">
+            <figure class="faq__photo">
+              <!-- Ganti dengan <img src="..." alt="Hutan tropis berkabut"> -->
+              <div class="media" data-label="Foto: hutan tropis berkabut">
+                <img src="/Asset/Image/HOMEPAGE/Home_faq.png" alt="" />
+              </div>
+              <figcaption class="faq__quote">
+                <p>
+                  “Jangan Hanya Memperhitungkan Mangrove Sebagai Aset Ekonomi”
+                </p>
+                <cite>— Daniel Murdiyarso</cite>
+              </figcaption>
+            </figure>
+
+            <div class="faq__list">
+              <article class="faq__item">
+                <h3>
+                  <button
+                    class="faq__q"
+                    type="button"
+                    id="faq-q1"
+                    aria-expanded="false"
+                    aria-controls="faq-a1"
+                  >
+                    <span class="faq__n">01</span
+                    ><span
+                      >Apakah saya perlu membuat akun untuk berdonasi?</span
+                    >
+                  </button>
+                </h3>
+                <div
+                  class="faq__a"
+                  id="faq-a1"
+                  role="region"
+                  aria-labelledby="faq-q1"
+                >
+                  <div>
+                    <p>
+                      Tidak perlu. Kamu bisa berdonasi tanpa akun dan langsung
+                      mendapat ID donasi unik yang dipakai untuk melacak
+                      donasimu.
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="faq__item">
+                <h3>
+                  <button
+                    class="faq__q"
+                    type="button"
+                    id="faq-q2"
+                    aria-expanded="false"
+                    aria-controls="faq-a2"
+                  >
+                    <span class="faq__n">02</span
+                    ><span
+                      >Bagaimana saya tahu donasi saya benar-benar sampai?</span
+                    >
+                  </button>
+                </h3>
+                <div
+                  class="faq__a"
+                  id="faq-a2"
+                  role="region"
+                  aria-labelledby="faq-q2"
+                >
+                  <div>
+                    <p>
+                      Lewat Pelacak Donasi: statusnya bergerak dari Diterima,
+                      Dialokasikan, Disalurkan, hingga Laporan Dampak. Setiap
+                      tahap punya tanggal dan keterangan, dilengkapi foto
+                      bertanggal dari lapangan.
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="faq__item">
+                <h3>
+                  <button
+                    class="faq__q"
+                    type="button"
+                    id="faq-q3"
+                    aria-expanded="false"
+                    aria-controls="faq-a3"
+                  >
+                    <span class="faq__n">03</span
+                    ><span
+                      >Berapa minimal donasi, dan bisakah saya berhenti?</span
+                    >
+                  </button>
+                </h3>
+                <div
+                  class="faq__a"
+                  id="faq-a3"
+                  role="region"
+                  aria-labelledby="faq-q3"
+                >
+                  <div>
+                    <p>
+                      Sekali donasi mulai dari Rp25.000, dan donasi bulanan
+                      mulai dari Rp20.000 per bulan. Donasi bulanan bisa kamu
+                      hentikan kapan saja.
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="faq__item">
+                <h3>
+                  <button
+                    class="faq__q"
+                    type="button"
+                    id="faq-q4"
+                    aria-expanded="false"
+                    aria-controls="faq-a4"
+                  >
+                    <span class="faq__n">04</span
+                    ><span>Untuk apa saja dana donasi digunakan?</span>
+                  </button>
+                </h3>
+                <div
+                  class="faq__a"
+                  id="faq-a4"
+                  role="region"
+                  aria-labelledby="faq-q4"
+                >
+                  <div>
+                    <p>
+                      Untuk program di lapangan: patroli ranger, penanaman
+                      pohon, pakan satwa, rehabilitasi, dan perawatan medis.
+                      Rincian alokasinya terbuka dan bisa kamu lihat sebelum
+                      membayar.
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="faq__item">
+                <h3>
+                  <button
+                    class="faq__q"
+                    type="button"
+                    id="faq-q5"
+                    aria-expanded="false"
+                    aria-controls="faq-a5"
+                  >
+                    <span class="faq__n">05</span
+                    ><span
+                      >Apakah perusahaan atau komunitas bisa bekerja sama dengan
+                      Suaka?</span
+                    >
+                  </button>
+                </h3>
+                <div
+                  class="faq__a"
+                  id="faq-a5"
+                  role="region"
+                  aria-labelledby="faq-q5"
+                >
+                  <div>
+                    <p>
+                      Bisa. Ada skema Sponsorship Program, Kolaborasi Program,
+                      dan Mitra Utama. Ajukan lewat
+                      <a href="/kemitraan.html">formulir kemitraan</a>, dan tim
+                      kami akan menghubungimu.
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= TESTIMONI ================= -->
+      <section class="reviews" aria-labelledby="revTitle">
+        <p class="reviews__eyebrow">Rating &amp; Reviews</p>
+        <h2 id="revTitle">Dipercaya Oleh Banyak Orang</h2>
+
+        <div class="rev">
+          <figure class="rcard rcard--black" tabindex="0">
+            <div class="stars" role="img" aria-label="5 dari 5 bintang">
+              ★★★★★
+            </div>
+            <blockquote>
+              Tiga menit setelah donasi, ID unik langsung masuk ke email.
+              Beberapa hari kemudian statusnya jadi Disalurkan lengkap dengan
+              foto. Baru kali ini aku bisa melihat uangku sampai.
+            </blockquote>
+            <figcaption>Dina A.</figcaption>
+          </figure>
+
+          <figure class="rcard rcard--purple" tabindex="0">
+            <div class="stars" role="img" aria-label="5 dari 5 bintang">
+              ★★★★★
+            </div>
+            <blockquote>
+              Tim kemitraannya profesional dan responsif. Laporan dampak untuk
+              program CSR kami detail dan bisa langsung dipresentasikan ke
+              manajemen.
+            </blockquote>
+            <figcaption>Raka P.</figcaption>
+          </figure>
+
+          <figure class="rcard rcard--grey1" tabindex="0">
+            <div class="stars" role="img" aria-label="5 dari 5 bintang">
+              ★★★★★
+            </div>
+            <blockquote>
+              Aku ikut donasi bulanan Rp20.000. Kabar dari lapangan tiap bulan
+              bikin aku merasa benar-benar ikut menjaga hutan.
+            </blockquote>
+            <figcaption>Made S.</figcaption>
+          </figure>
+
+          <figure class="rcard rcard--grey2" tabindex="0">
+            <div class="stars" role="img" aria-label="5 dari 5 bintang">
+              ★★★★★
+            </div>
+            <blockquote>
+              Pelacak donasinya mirip lacak paket, jadi tenang. Rincian alokasi
+              dananya juga terbuka, tidak ada yang ditutup-tutupi.
+            </blockquote>
+            <figcaption>Sari W.</figcaption>
+          </figure>
+
+          <figure class="rcard rcard--lime" tabindex="0">
+            <div class="stars" role="img" aria-label="5 dari 5 bintang">
+              ★★★★★
+            </div>
+            <blockquote>
+              Aku donasi satu pohon untuk ulang tahun adikku. Dapat foto
+              penanaman bertanggal dan lokasinya. Hadiah paling berkesan tahun
+              ini!
+            </blockquote>
+            <figcaption>Kevin L.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="wrap">
+          <div class="cta">
+            <div class="cta__text">
+              <h2>
+                Aku masih di sini<br />Maukah kamu membantu menjaga<br />rumahku?
+              </h2>
+              <p>
+                Satu langkahmu hari ini bisa jadi alasan aku masih punya rumah
+                besok
+              </p>
+              <a class="btn" href="Donation.html">Bantu Mereka</a>
+              <ul class="cta__notes">
+                <li>Tanpa daftar</li>
+                <li>Pilih Paket</li>
+                <li>Lacak sampai ke hutan</li>
+              </ul>
+            </div>
+            <div
+              class="media cta__img"
+              data-label="Foto: orangutan dan anaknya (PNG tanpa latar)"
+            >
+              <img src="/Asset/Image/HOMEPAGE/Home-LastCTA.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div id="site-footer"></div>
+
+    <script src="/js/pages/faq-reviews.js" defer></script>
+    <script src="/js/core/reveal.js" defer></script>
+    <script src="js/pages/index.js" defer></script>
+    <script src="/js/core/components.js" defer></script>
+    <script src="/js/modules/navbar.js" defer></script>
+  </body>
+</html>

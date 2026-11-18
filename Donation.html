@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Donasi — Suaka</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/components/navbar.css" />
+    <link rel="stylesheet" href="/css/components/footer.css" />
+    <link rel="icon" href="/Asset/icons/tabicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/css/pages/Donation.css" />
+    <link rel="stylesheet" href="/css/components/button.css" />
+    <link rel="stylesheet" href="/css/components/reveal.css" />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+  </head>
+  <body>
+    <div id="navbar-container"></div>
+
+    <main class="donasi">
+      <div class="wrap">
+        <header class="head reveal">
+          <h1>Donasi</h1>
+          <p>
+            Pilih Dukunganmu, Bayar Dalam Satu Menit Tanpa Akun, Lalu Lacak
+            Sampai Ke Hutan.
+          </p>
+        </header>
+
+        <div class="cards">
+          <article class="don reveal">
+            <div
+              class="media fill"
+              data-label="Foto: trenggiling (objek di separuh atas)"
+            >
+              <img src="/Asset/Image/HOMEPAGE/Home_Donasi_Dampak.jpg" alt="" />
+            </div>
+            <div class="don__panel">
+              <h2>Sekali Donasi</h2>
+              <p>
+                Pilih Dukungan Mulai Dari Rp25.000, Lalu Lihat Dampaknya Lewat
+                ID Donasimu. Tanpa Daftar Akun.
+              </p>
+              <a class="btn" href="/Donasi_1.html" data-tipe="sekali"
+                >Pilih Donasi</a
+              >
+            </div>
+          </article>
+
+          <article class="don reveal">
+            <div
+              class="media fill"
+              data-label="Foto: keluarga orangutan (objek di separuh atas)"
+            >
+              <img
+                src="/Asset/Image/HOMEPAGE/Home-DonasiBerdampak.png"
+                alt=""
+              />
+            </div>
+            <div class="don__panel">
+              <h2>Bulanan</h2>
+              <p>
+                Dukung Rutin Mulai Rp20.000 Per Bulan Dan Terima Kabar Dari
+                Lapangan. Bisa Berhenti Kapan Saja
+              </p>
+              <a class="btn" href="/Donasi_2.html" data-tipe="bulanan"
+                >Pilih Donasi</a
+              >
+            </div>
+          </article>
+        </div>
+
+        <ul class="trust reveal">
+          <li>Tanpa Daftar Akun</li>
+          <li>Setiap Donasi Punya ID</li>
+          <li>Rincian Alokasi Terbuka</li>
+        </ul>
+      </div>
+    </main>
+
+    <div id="site-footer"></div>
+
+    <script src="/js/core/reveal.js" defer></script>
+    <script src="/js/core/components.js" defer></script>
+    <script src="/js/modules/navbar.js" defer></script>
+    <script src="/js/Donations.js" defer></script>
+  </body>
+</html>
